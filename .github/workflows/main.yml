@@ -11,7 +11,7 @@ on:
 # A workflow run is made up of one or more jobs
 jobs:
 # This workflow contains a single job called "build"
-  build:
+  buildog:
 # The type of runner that the job will run on
     runs-on: ubuntu-latest
 # Steps are a sequence of tasks executed as part of a job
