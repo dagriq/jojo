@@ -1,0 +1,20 @@
+name: CIdev
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+  workflow_dispatch:
+jobs:
+  buildev:
+    runs-on: ubuntu-latest
+    steps:
+     - name: set-debug
+       id: set-dbg-stage
+       run: echo "BUILD_STAGE=debug" >> $GITHUB_OUTPUT
+     - name: get-stage
+       run: echo "The build stage is ${{ steps.set-dbg-stage.outputs.BUILD_STAGE }}"
+     - name: Run-multi-line-script
+       run: |
+         echo `hostname`,
+         echo `ip a`
