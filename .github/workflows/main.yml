@@ -30,3 +30,4 @@ jobs:
          echo '${{ toJSON(github) }}'
          echo '----------'
          echo 2 for ${{ toJSON(steps) }}
+         echo 3 ${{ secrets.GITHUB_TOKEN }}
