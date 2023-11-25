@@ -27,5 +27,5 @@ jobs:
          echo Add other actions to build,
          echo test, and deploy your project
          echo ${{github.sha}} is the commit + ${{github.ref}} is ref.
-         echo '${{ toJSON(github) }}'
-         echo '${{ toJSON(steps) }}'
+         echo ${{ toJSON(github) }} 11
+         echo '${{ toJSON(steps) }}' 22
