@@ -1,6 +1,6 @@
 name: CI
 # Controls when the workflow will run
-run-name: Robinet teava pornita de ${{ github.actor }}
+run-name: Robinet teava pornita de ${{ github.actor }} for ${{github.repository}}
 on:
 # Triggers the workflow on push or pull request events for main
   push:
